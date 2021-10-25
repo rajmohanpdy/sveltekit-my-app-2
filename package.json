@@ -10,14 +10,16 @@
     "@sveltejs/adapter-netlify": "^1.0.0-next.14",
     "@sveltejs/adapter-node": "^1.0.0-next.55",
     "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.34.0"
+    "@sveltejs/kit": "^1.0.0-next.109",
+    "svelte": "^3.38.2",
+    "vite": "^2.3.3"
   },
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
-    
+    "cookie": "^0.4.1",
+    "@sveltejs/app-utils": "^1.0.0-next.0",
+    "encoding": "^0.1.13"
   }
 }
