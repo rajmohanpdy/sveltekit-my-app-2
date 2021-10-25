@@ -3,4 +3,3 @@
     publish = "build"       # directory containing static files
 [context.production]
   publish = "output/"
-  command = "make publish"
