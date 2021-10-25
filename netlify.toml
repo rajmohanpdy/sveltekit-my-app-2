@@ -1,3 +1,6 @@
 [build]
     command = "npm run build"  # directory build files
     publish = "build"       # directory containing static files
+[context.production]
+  publish = "output/"
+  command = "make publish"
