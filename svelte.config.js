@@ -2,6 +2,9 @@
 //import adapter from '@sveltejs/adapter-static';
 //import adapter from '@sveltejs/adapter-node';
 import adapter from '@sveltejs/adapter-netlify';
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+const pkg = require('./package.json')
 
 const config = {
 	kit: {
@@ -23,7 +26,12 @@ const config = {
 		// 	}
 		// })
 		adapter: adapter(), // currently the adapter does not take any options
-	}
+		vite: {
+			ssr: {
+			  noExternal: Object.keys(pkg.dependencies || {}),
+			},
+		  },
+	},
 };
 
 export default config;
